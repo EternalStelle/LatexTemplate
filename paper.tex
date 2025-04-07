@@ -86,7 +86,7 @@
 \fancyhf{}  % 清空默认页眉页脚
 \renewcommand{\headrulewidth}{0.4pt}  % 页眉横线宽度
 \renewcommand{\footrulewidth}{0pt}  % 页脚横线宽度
-\fancyhead[C]{基于Zemax的双高斯物镜的设计与仿真}  % 页眉中间显示标题
+\fancyhead[C]{标题}  % 页眉中间显示标题
 \fancyfoot[LE,RO]{\thepage}  % 页脚右面显示页码
 
 % 目录设置
@@ -139,7 +139,12 @@
 
 \section{实验与结果}
 我们在CIFAR-10数据集上评估了模型性能，实验结果如表所示。
-\end{table}
+\begin{tabularx}{\textwidth}{|X|X|X|}
+  \hline
+  \textbf{模型} & \textbf{准确率} & \textbf{参数量} \\ \hline
+  ResNet-20 & 91.25\% & 0.27M \\ \hline
+  ResNet-56 & 93.45\% & 0.85M \\ \hline
+\end{tabularx}
 
 \printbibliography[heading=bibintoc, title=参考文献]
 
