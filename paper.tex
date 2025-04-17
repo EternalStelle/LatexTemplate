@@ -1,4 +1,4 @@
-\documentclass[fontset=windows, UTF8, zihao=-4,AutoFakeBold=true]{ctexart}
+\documentclass[fontset=windows, UTF8, zihao=-4,AutoFakeBold=true, twoside]{ctexart}
 \usepackage{geometry}
 \geometry{a4paper, left=3cm, right=2.5cm, top=3cm, bottom=2.5cm}
 
@@ -87,7 +87,7 @@
 \renewcommand{\headrulewidth}{0.4pt}  % 页眉横线宽度
 \renewcommand{\footrulewidth}{0pt}  % 页脚横线宽度
 \fancyhead[C]{标题}  % 页眉中间显示标题
-\fancyfoot[LE,RO]{\thepage}  % 页脚右面显示页码
+\fancyfoot[LE,RO]{\thepage}  % 页脚设置左右页码，并设置twoside
 
 % 目录设置
 \renewcommand{\contentsname}{\large{目录}}
@@ -139,7 +139,7 @@
 
 \section{实验与结果}
 我们在CIFAR-10数据集上评估了模型性能，实验结果如表所示。
-\begin{tabularx}{\textwidth}{|X|X|X|}
+\begin{tabularx}{0.8\textwidth}{|X|X|X|}
   \hline
   \textbf{模型} & \textbf{准确率} & \textbf{参数量} \\ \hline
   ResNet-20 & 91.25\% & 0.27M \\ \hline
